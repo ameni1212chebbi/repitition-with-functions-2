@@ -91,15 +91,70 @@ function multiplyBy10(firstNumber, secondNumber) {
     
     //Q8
     function isEven(number) {
-        if(number===number){
-            return true
-            return false
-        }
-        
-    if(number-number/2+1){
-        return number*2
-    }
-    }
+        if ( number === 0 ){ return true } 
+      else if (number === 1 ) {return false } 
+        else  { return isEven(number - 2 ) ;} } 
 
       //Q9
 
+        function multiply(number1,number2){
+            if(number2===0){
+          return 0}
+            return(number1+multiply(number1,number2-1))
+            }
+            undefined
+          multiply(3, 2)
+          6
+        
+        //Q10
+        
+        function range(start, end) {
+            if(end===0){
+                start
+            }
+            return range(inc(start),dec(end))
+            } //does not work
+            
+            function range(start,end){
+                if(end===start+1){
+                    return ''
+                }
+                return start+1 +','+range(start+1,end)
+            }
+            undefined
+              range(1,9)
+            "2,3,4,5,6,7,8,"
+            //Q11
+            function stringLength(string) {
+                return string.slice(string)
+                }
+                //Q12
+                //Q15
+                   
+                function power(base, exponent) {
+                    if (exponent===0)
+                    {return 1}
+                    return power(base, exponent-1)}
+                //Q16
+                function reverseString(string) {
+                    return (string === '') ? '' : reverse(string.substr(1)) + string.charAt(0);
+                  }
+                  undefined
+                  reverseString("Fatima")
+                  "amitaF"
+                
+                  //Q17
+                  function greatestCommonDivisor(n1, n2){
+                    if(n2 === 0){
+                      return n1;
+                    }
+                    return greatestCommonDivisor(n2, n1 % n2);
+                  }
+                  undefined
+                  greatestCommonDivisor(50, 120)
+                  10
+                  //Q18
+                  
+                  
+
+        
