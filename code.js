@@ -129,12 +129,66 @@ function multiplyBy10(firstNumber, secondNumber) {
                 return string.slice(string)
                 }
                 //Q12
+                function modulo(number1, number2) {
+                    if ( number1 < number2)
+                    { 
+                        return number1
+                     }
+
+                     var n = number1 - number2
+                     return   modulo(n, number2)
+                 } 
+                 modulo(7,3)
+                 modulo(4,3)
+                 modulo(1,3)
+                 1
+
+    //Q13             
+function countChars(string , char){
+    if(string.length === 0){
+        return 0;
+    }
+    if(string[0]===char){
+        return 1 + countChars(string.slice(1) , char )
+    }
+    return 0 +  countChars(string.slice(1) , char )
+}
+countChars("hit","i") 0
+countChars("it","i") 1
+countChars("t","i") 0 
+countChars("","i") 0 
+1
+
+ 
+
+                
+
+
+
+                    //Q14
+                    function indexOf(string, char) {
+                        if(string.length === 0){
+                            return 0;
+                        }
+                        if(string[0]===char){
+                            return 1 + indexOf(string.slice(1) , char )
+                        }
+                        return 0 + indexOf(string.slice(1) , char )
+                    
+                        }
+
                 //Q15
                    
                 function power(base, exponent) {
                     if (exponent===0)
                     {return 1}
-                    return power(base, exponent-1)}
+                    return base*power(base, exponent-1)} 
+                   undefined
+                     power(2, 3)
+                          8
+                      power(3, 4)
+                         81
+
                 //Q16
                 function reverseString(string) {
                     return (string === '') ? '' : reverse(string.substr(1)) + string.charAt(0);
@@ -154,7 +208,7 @@ function multiplyBy10(firstNumber, secondNumber) {
                   greatestCommonDivisor(50, 120)
                   10
                   //Q18
-                  
+
                   
 
         
