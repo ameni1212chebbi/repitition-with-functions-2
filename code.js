@@ -208,7 +208,29 @@ countChars("","i") 0
                   greatestCommonDivisor(50, 120)
                   10
                   //Q18
+                  function lowestCommonMultiple(n1, n2) {
+                    if(n1===0){
+                    return n2;
+                    }
 
-                  
+                    return (n1*n2)/greatestCommonDivisor(n1,n2)
+                    }
+                    lowestCommonMultiple(4, 6)
+                    12
+                    //Q19
+                    function numberOfHandshakes(n) {
+                        if(n>0){
+                        return n*(n-1)/2
+                        }
+                        }
+                        undefined
+                        numberOfHandshakes(2)
+                        1
+                        numberOfHandshakes(3)
+                        3
+                        numberOfHandshakes(4)
+                        6
+                        numberOfHandshakes(5)
+                        10
 
         
